@@ -1,0 +1,154 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav.box-mnu-bottom {
+	background: #53bb53;
+	margin: 0 10px 20px 10px;
+
+}
+
+ul.list {
+	height: 0;
+	margin: 0;
+}
+
+
+li.li-mnu-bottom {
+	list-style-type: none;
+	margin: 0;
+	width: auto;
+	float: left;
+	border-left: 7px #53bb53 solid;
+}
+
+li.li-mnu-bottom:hover {
+	background: #fff;
+	color: #53bb53;
+	border-left: 7px #f7c200 solid;
+}
+
+div.text_manu_bottom {
+ 	margin: 0 auto;
+ 	width: 20.8%;
+}
+
+img.img_bottom {
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 32px;
+	height: 32px;
+}
+
+a.link_bottom {
+	font: 16px/42px Arial;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 5%;
+	margin-bottom: 3.4%;
+	margin-left: 10px;
+	padding-right: 79px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+a.link_bottom:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+div.col_bottom {
+	float: left;
+	width: 280px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-left: solid 7px #53bb53;
+}
+
+div.col_bottom:hover {
+	color: #000;
+	border-left: solid 7px #f7c200;
+}
+
+img.logo_manu_bottom {
+ 	float: left;
+}
+
+p.text_manu_bottom {
+	color: #fff;
+	margin-left: 10px;
+	font: 24px/24px Arial;
+	float: right;
+}
+
+div#text {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+a.manu {
+	display: block;
+	padding: 12px 30px;
+	font: 1em/1em Arial;
+	overflow: hidden;
+	color: #fff;
+	text-decoration: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+a.manu:hover {
+	color: #53bb53;
+}
+
+div.clear {
+	clear: both;
+}
+
+div#miden_menu {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.top {
+	margin-top: 25px;
+}
+
+div#lines {
+	display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	div#miden_menu {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	div#miden_menu {
+		width: 98%;
+		display: none;
+	}
+
+	nav.box-mnu-bottom {
+		float: left;
+		width: 96%;
+	}
+
+	li.li-mnu-bottom {
+		width: 100%;
+	}
+
+	div#lines {
+		display: block;
+	}
+}
+
