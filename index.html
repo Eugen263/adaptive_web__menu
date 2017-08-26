@@ -12,7 +12,7 @@
 	<link rel="alternative" media="only screen and (max-width: 360px)" href="css/menu.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Ease-Web</title>
+	<title>adaptive web-menu</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="x/icon" href="http://ease-web.tk/img/icons/logo.jpg">
 
@@ -20,82 +20,94 @@
 
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+<script type="text/javascript">
+var id_menu = new Array('miden_menu');
+startList = function allclose() {
+	for (i=0; i < id_menu.length; i++){
+		document.getElementById(id_menu[i]).style.display = "none";
+	}
+}
+function openMenu(id){
+	for (i=0; i < id_menu.length; i++){
+		if (id != id_menu[i]){
+			document.getElementById(id_menu[i]).style.display = "none";
+		}
+	}
+	if (document.getElementById(id).style.display == "block"){
+		document.getElementById(id).style.display = "none";
+	}else{
+		document.getElementById(id).style.display = "block";
+	}
+}
+window.onload=startList;
+</script>
 </head>
 <body>
 <nav class="box box-mnu box-mnu-bottom">
 		<div id="text">
 			<img src="http://ease-web.tk/img/icons/logo_wite.png" alt="">
-			<p style="color: #fff; margin: 10px 0 0 0; font: 24px/0px Fira Sans Extra Condensed">Ease-Меню</p>
+			<p style="color: #fff; margin: 10px 0 0 0; font: 24px/0px Fira Sans Extra Condensed">Easy-Menu</p>
 		</div>
-		<div id="lines" onclick="
-		var click = 0
-		if (click = 1) {
-			var menu = document.getElementById('miden_menu');
-			menu.style.display = 'block'
-			ckick++
-		}
-		
-		if (click = 2) {
-			var menu = document.getElementById('miden_menu');
-			menu.style.display = 'none';
-		}
-		"><i class="fa fa-bars bars"></i></div>
+		<div id="menu" onclick="openMenu('miden_menu');return(false)">
+			<i class="fa fa-bars bars"></i>
 		<div id="miden_menu">
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/html_and_css.html" class="manu"><i class="fa fa-code"></i> HTML и CSS</a>
+				<a href="http://ease-web.tk/blog/html_and_css.html" class="menu"><i class="fa fa-code"></i> HTML and CSS</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/wordpress.html" class="manu"><i class="fa fa-wordpress"></i> WordPress</a>
+				<a href="http://ease-web.tk/blog/wordpress.html" class="menu"><i class="fa fa-wordpress"></i> WordPress</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/web_desine.html" class="manu"><i class="fa fa-paint-brush"></i> Веб-дизайн</a>
+				<a href="http://ease-web.tk/blog/web_desine.html" class="menu"><i class="fa fa-paint-brush"></i> Web-desine</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/tools.html" class="manu"><i class="fa fa-cogs"></i> Инструменты</a>
+				<a href="http://ease-web.tk/blog/tools.html" class="menu"><i class="fa fa-cogs"></i> Tools</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/adaptive_web-desine.html" class="manu"><i class="fa fa-tv"></i> Адаптивный веб-дизайн</a>
+				<a href="http://ease-web.tk/blog/adaptive_web-desine.html" class="menu"><i class="fa fa-tv"></i> Adaptive web-desine</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/java_script.html" class="manu"><i class="fa icon-javascript"></i> Java Script</a>
+				<a href="http://ease-web.tk/blog/java_script.html" class="menu"><i class="fa icon-javascript"></i> Java Script</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/jquery.html" class="manu"><i class="fa icon-jquery"></i> jQuery</a>
+				<a href="http://ease-web.tk/blog/jquery.html" class="menu"><i class="fa icon-jquery"></i> jQuery</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/photoshop.html" class="manu">
-					<i class="fa fa-image"></i> Фотошоп
+				<a href="http://ease-web.tk/blog/photoshop.html" class="menu">
+					<i class="fa fa-image"></i> Photoshop
 				</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/mysql.html" class="manu"><i class="fa icon-mysql"></i> mySQL</a>
+				<a href="http://ease-web.tk/blog/mysql.html" class="menu"><i class="fa icon-mysql"></i> mySQL</a>
 			</li>
 		</ul>
 		<ul class="list-unstyled list">
 			<li class="li-mnu-bottom">
-				<a href="http://ease-web.tk/blog/offtop.html" class="manu"><i class="fa fa-folder-open"></i> Offtop</a>
+				<a href="http://ease-web.tk/blog/offtop.html" class="menu"><i class="fa fa-folder-open"></i> Offtop</a>
 			</li>
 		</ul>
 		<div class="clear"></div>
 		<div class="top"></div>
 	</div>
+	</div>
 </nav>
+<script type="text/javascript" src='js/menu.js'></script>
 </body>
 </html>
